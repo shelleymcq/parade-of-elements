@@ -5,7 +5,9 @@
     "name": "Hydrogen",
     "x": 1,
     "y": 1,
-    "family": "nonmetal"
+    "family": "nonmetal",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 2,
@@ -13,7 +15,9 @@
     "name": "Helium",
     "x": 18,
     "y": 1,
-    "family": "noble"
+    "family": "noble",
+    "status": "available",
+    "email": null
   },
 
   {
@@ -22,7 +26,9 @@
     "name": "Lithium",
     "x": 1,
     "y": 2,
-    "family": "alkali"
+    "family": "alkali",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 4,
@@ -30,7 +36,9 @@
     "name": "Beryllium",
     "x": 2,
     "y": 2,
-    "family": "alkaline"
+    "family": "alkaline",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 5,
@@ -38,7 +46,9 @@
     "name": "Boron",
     "x": 13,
     "y": 2,
-    "family": "metalloid"
+    "family": "metalloid",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 6,
@@ -46,7 +56,9 @@
     "name": "Carbon",
     "x": 14,
     "y": 2,
-    "family": "nonmetal"
+    "family": "nonmetal",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 7,
@@ -54,7 +66,9 @@
     "name": "Nitrogen",
     "x": 15,
     "y": 2,
-    "family": "nonmetal"
+    "family": "nonmetal",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 8,
@@ -62,7 +76,9 @@
     "name": "Oxygen",
     "x": 16,
     "y": 2,
-    "family": "nonmetal"
+    "family": "nonmetal",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 9,
@@ -70,7 +86,9 @@
     "name": "Fluorine",
     "x": 17,
     "y": 2,
-    "family": "halogen"
+    "family": "halogen",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 10,
@@ -78,7 +96,9 @@
     "name": "Neon",
     "x": 18,
     "y": 2,
-    "family": "noble"
+    "family": "noble",
+    "status": "available",
+    "email": null
   },
 
   {
@@ -87,7 +107,9 @@
     "name": "Sodium",
     "x": 1,
     "y": 3,
-    "family": "alkali"
+    "family": "alkali",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 12,
@@ -95,7 +117,9 @@
     "name": "Magnesium",
     "x": 2,
     "y": 3,
-    "family": "alkaline"
+    "family": "alkaline",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 13,
@@ -103,7 +127,9 @@
     "name": "Aluminium",
     "x": 13,
     "y": 3,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 14,
@@ -111,7 +137,9 @@
     "name": "Silicon",
     "x": 14,
     "y": 3,
-    "family": "metalloid"
+    "family": "metalloid",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 15,
@@ -119,7 +147,9 @@
     "name": "Phosphorus",
     "x": 15,
     "y": 3,
-    "family": "nonmetal"
+    "family": "nonmetal",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 16,
@@ -127,7 +157,9 @@
     "name": "Sulfur",
     "x": 16,
     "y": 3,
-    "family": "nonmetal"
+    "family": "nonmetal",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 17,
@@ -135,7 +167,9 @@
     "name": "Chlorine",
     "x": 17,
     "y": 3,
-    "family": "halogen"
+    "family": "halogen",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 18,
@@ -143,7 +177,9 @@
     "name": "Argon",
     "x": 18,
     "y": 3,
-    "family": "noble"
+    "family": "noble",
+    "status": "available",
+    "email": null
   },
 
   {
@@ -152,7 +188,9 @@
     "name": "Potassium",
     "x": 1,
     "y": 4,
-    "family": "alkali"
+    "family": "alkali",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 20,
@@ -160,7 +198,9 @@
     "name": "Calcium",
     "x": 2,
     "y": 4,
-    "family": "alkaline"
+    "family": "alkaline",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 21,
@@ -168,7 +208,9 @@
     "name": "Scandium",
     "x": 3,
     "y": 4,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 22,
@@ -176,7 +218,9 @@
     "name": "Titanium",
     "x": 4,
     "y": 4,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 23,
@@ -184,7 +228,9 @@
     "name": "Vanadium",
     "x": 5,
     "y": 4,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 24,
@@ -192,7 +238,9 @@
     "name": "Chromium",
     "x": 6,
     "y": 4,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 25,
@@ -200,7 +248,9 @@
     "name": "Manganese",
     "x": 7,
     "y": 4,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 26,
@@ -208,7 +258,9 @@
     "name": "Iron",
     "x": 8,
     "y": 4,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 27,
@@ -216,7 +268,9 @@
     "name": "Cobalt",
     "x": 9,
     "y": 4,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 28,
@@ -224,7 +278,9 @@
     "name": "Nickel",
     "x": 10,
     "y": 4,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 29,
@@ -232,7 +288,9 @@
     "name": "Copper",
     "x": 11,
     "y": 4,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 30,
@@ -240,7 +298,9 @@
     "name": "Zinc",
     "x": 12,
     "y": 4,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 31,
@@ -248,7 +308,9 @@
     "name": "Gallium",
     "x": 13,
     "y": 4,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 32,
@@ -256,7 +318,9 @@
     "name": "Germanium",
     "x": 14,
     "y": 4,
-    "family": "metalloid"
+    "family": "metalloid",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 33,
@@ -264,7 +328,9 @@
     "name": "Arsenic",
     "x": 15,
     "y": 4,
-    "family": "metalloid"
+    "family": "metalloid",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 34,
@@ -272,7 +338,9 @@
     "name": "Selenium",
     "x": 16,
     "y": 4,
-    "family": "nonmetal"
+    "family": "nonmetal",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 35,
@@ -280,7 +348,9 @@
     "name": "Bromine",
     "x": 17,
     "y": 4,
-    "family": "halogen"
+    "family": "halogen",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 36,
@@ -288,7 +358,9 @@
     "name": "Krypton",
     "x": 18,
     "y": 4,
-    "family": "noble"
+    "family": "noble",
+    "status": "available",
+    "email": null
   },
 
   {
@@ -297,7 +369,9 @@
     "name": "Rubidium",
     "x": 1,
     "y": 5,
-    "family": "alkali"
+    "family": "alkali",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 38,
@@ -305,7 +379,9 @@
     "name": "Strontium",
     "x": 2,
     "y": 5,
-    "family": "alkaline"
+    "family": "alkaline",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 39,
@@ -313,7 +389,9 @@
     "name": "Yttrium",
     "x": 3,
     "y": 5,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 40,
@@ -321,7 +399,9 @@
     "name": "Zirconium",
     "x": 4,
     "y": 5,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 41,
@@ -329,7 +409,9 @@
     "name": "Niobium",
     "x": 5,
     "y": 5,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 42,
@@ -337,7 +419,9 @@
     "name": "Molybdenum",
     "x": 6,
     "y": 5,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 43,
@@ -345,7 +429,9 @@
     "name": "Technetium",
     "x": 7,
     "y": 5,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 44,
@@ -353,7 +439,9 @@
     "name": "Ruthenium",
     "x": 8,
     "y": 5,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 45,
@@ -361,7 +449,9 @@
     "name": "Rhodium",
     "x": 9,
     "y": 5,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 46,
@@ -369,7 +459,9 @@
     "name": "Palladium",
     "x": 10,
     "y": 5,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 47,
@@ -377,7 +469,9 @@
     "name": "Silver",
     "x": 11,
     "y": 5,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 48,
@@ -385,7 +479,9 @@
     "name": "Cadmium",
     "x": 12,
     "y": 5,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 49,
@@ -393,7 +489,9 @@
     "name": "Indium",
     "x": 13,
     "y": 5,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 50,
@@ -401,7 +499,9 @@
     "name": "Tin",
     "x": 14,
     "y": 5,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 51,
@@ -409,7 +509,9 @@
     "name": "Antimony",
     "x": 15,
     "y": 5,
-    "family": "metalloid"
+    "family": "metalloid",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 52,
@@ -417,7 +519,9 @@
     "name": "Tellurium",
     "x": 16,
     "y": 5,
-    "family": "metalloid"
+    "family": "metalloid",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 53,
@@ -425,7 +529,9 @@
     "name": "Iodine",
     "x": 17,
     "y": 5,
-    "family": "halogen"
+    "family": "halogen",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 54,
@@ -433,7 +539,9 @@
     "name": "Xenon",
     "x": 18,
     "y": 5,
-    "family": "noble"
+    "family": "noble",
+    "status": "available",
+    "email": null
   },
 
   {
@@ -442,7 +550,9 @@
     "name": "Cesium",
     "x": 1,
     "y": 6,
-    "family": "alkali"
+    "family": "alkali",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 56,
@@ -450,7 +560,9 @@
     "name": "Barium",
     "x": 2,
     "y": 6,
-    "family": "alkaline"
+    "family": "alkaline",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 57,
@@ -458,7 +570,9 @@
     "name": "Lanthanum",
     "x": 3,
     "y": 6,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 58,
@@ -466,7 +580,9 @@
     "name": "Cerium",
     "x": 4,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 59,
@@ -474,7 +590,9 @@
     "name": "Praseodymium",
     "x": 5,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 60,
@@ -482,7 +600,9 @@
     "name": "Neodymium",
     "x": 6,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 61,
@@ -490,7 +610,9 @@
     "name": "Promethium",
     "x": 7,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 62,
@@ -498,7 +620,9 @@
     "name": "Samarium",
     "x": 8,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 63,
@@ -506,7 +630,9 @@
     "name": "Europium",
     "x": 9,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 64,
@@ -514,7 +640,9 @@
     "name": "Gadolinium",
     "x": 10,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 65,
@@ -522,7 +650,9 @@
     "name": "Terbium",
     "x": 11,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 66,
@@ -530,7 +660,9 @@
     "name": "Dysprosium",
     "x": 12,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 67,
@@ -538,7 +670,9 @@
     "name": "Holmium",
     "x": 13,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 68,
@@ -546,7 +680,9 @@
     "name": "Erbium",
     "x": 14,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 69,
@@ -554,7 +690,9 @@
     "name": "Thulium",
     "x": 15,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 70,
@@ -562,7 +700,9 @@
     "name": "Ytterbium",
     "x": 16,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 71,
@@ -570,7 +710,9 @@
     "name": "Lutetium",
     "x": 17,
     "y": 8,
-    "family": "lanthanide"
+    "family": "lanthanide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 72,
@@ -578,7 +720,9 @@
     "name": "Hafnium",
     "x": 4,
     "y": 6,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 73,
@@ -586,7 +730,9 @@
     "name": "Tantalum",
     "x": 5,
     "y": 6,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 74,
@@ -594,7 +740,9 @@
     "name": "Tungsten",
     "x": 6,
     "y": 6,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 75,
@@ -602,7 +750,9 @@
     "name": "Rhenium",
     "x": 7,
     "y": 6,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 76,
@@ -610,7 +760,9 @@
     "name": "Osmium",
     "x": 8,
     "y": 6,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 77,
@@ -618,7 +770,9 @@
     "name": "Iridium",
     "x": 9,
     "y": 6,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 78,
@@ -626,7 +780,9 @@
     "name": "Platinum",
     "x": 10,
     "y": 6,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 79,
@@ -634,7 +790,9 @@
     "name": "Gold",
     "x": 11,
     "y": 6,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 80,
@@ -642,7 +800,9 @@
     "name": "Mercury",
     "x": 12,
     "y": 6,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 81,
@@ -650,7 +810,9 @@
     "name": "Thallium",
     "x": 13,
     "y": 6,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 82,
@@ -658,7 +820,9 @@
     "name": "Lead",
     "x": 14,
     "y": 6,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 83,
@@ -666,7 +830,9 @@
     "name": "Bismuth",
     "x": 15,
     "y": 6,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 84,
@@ -674,7 +840,9 @@
     "name": "Polonium",
     "x": 16,
     "y": 6,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 85,
@@ -682,7 +850,9 @@
     "name": "Astatine",
     "x": 17,
     "y": 6,
-    "family": "halogen"
+    "family": "halogen",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 86,
@@ -690,7 +860,9 @@
     "name": "Radon",
     "x": 18,
     "y": 6,
-    "family": "noble"
+    "family": "noble",
+    "status": "available",
+    "email": null
   },
 
   {
@@ -699,7 +871,9 @@
     "name": "Francium",
     "x": 1,
     "y": 7,
-    "family": "alkali"
+    "family": "alkali",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 88,
@@ -707,7 +881,9 @@
     "name": "Radium",
     "x": 2,
     "y": 7,
-    "family": "alkaline"
+    "family": "alkaline",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 89,
@@ -715,7 +891,9 @@
     "name": "Actinium",
     "x": 3,
     "y": 7,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 90,
@@ -723,7 +901,9 @@
     "name": "Thorium",
     "x": 4,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 91,
@@ -731,7 +911,9 @@
     "name": "Protactinium",
     "x": 5,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 92,
@@ -739,7 +921,9 @@
     "name": "Uranium",
     "x": 6,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 93,
@@ -747,7 +931,9 @@
     "name": "Neptunium",
     "x": 7,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 94,
@@ -755,7 +941,9 @@
     "name": "Plutonium",
     "x": 8,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 95,
@@ -763,7 +951,9 @@
     "name": "Americium",
     "x": 9,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 96,
@@ -771,7 +961,9 @@
     "name": "Curium",
     "x": 10,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 97,
@@ -779,7 +971,9 @@
     "name": "Berkelium",
     "x": 11,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 98,
@@ -787,7 +981,9 @@
     "name": "Californium",
     "x": 12,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 99,
@@ -795,7 +991,9 @@
     "name": "Einsteinium",
     "x": 13,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 100,
@@ -803,7 +1001,9 @@
     "name": "Fermium",
     "x": 14,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 101,
@@ -811,7 +1011,9 @@
     "name": "Mendelevium",
     "x": 15,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 102,
@@ -819,7 +1021,9 @@
     "name": "Nobelium",
     "x": 16,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 103,
@@ -827,7 +1031,9 @@
     "name": "Lawrencium",
     "x": 17,
     "y": 9,
-    "family": "actinide"
+    "family": "actinide",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 104,
@@ -835,7 +1041,9 @@
     "name": "Rutherfordium",
     "x": 4,
     "y": 7,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 105,
@@ -843,7 +1051,9 @@
     "name": "Dubnium",
     "x": 5,
     "y": 7,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 106,
@@ -851,7 +1061,9 @@
     "name": "Seaborgium",
     "x": 6,
     "y": 7,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 107,
@@ -859,7 +1071,9 @@
     "name": "Bohrium",
     "x": 7,
     "y": 7,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 108,
@@ -867,7 +1081,9 @@
     "name": "Hassium",
     "x": 8,
     "y": 7,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 109,
@@ -875,7 +1091,9 @@
     "name": "Meitnerium",
     "x": 9,
     "y": 7,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 110,
@@ -883,7 +1101,9 @@
     "name": "Darmstadtium",
     "x": 10,
     "y": 7,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 111,
@@ -891,7 +1111,9 @@
     "name": "Roentgenium",
     "x": 11,
     "y": 7,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 112,
@@ -899,7 +1121,9 @@
     "name": "Copernicium",
     "x": 12,
     "y": 7,
-    "family": "transition"
+    "family": "transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 113,
@@ -907,7 +1131,9 @@
     "name": "Nihonium",
     "x": 13,
     "y": 7,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 114,
@@ -915,7 +1141,9 @@
     "name": "Flerovium",
     "x": 14,
     "y": 7,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 115,
@@ -923,7 +1151,9 @@
     "name": "Moscovium",
     "x": 15,
     "y": 7,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 116,
@@ -931,7 +1161,9 @@
     "name": "Livermorium",
     "x": 16,
     "y": 7,
-    "family": "post-transition"
+    "family": "post-transition",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 117,
@@ -939,7 +1171,9 @@
     "name": "Tennessine",
     "x": 17,
     "y": 7,
-    "family": "halogen"
+    "family": "halogen",
+    "status": "available",
+    "email": null
   },
   {
     "Z": 118,
@@ -947,6 +1181,8 @@
     "name": "Oganesson",
     "x": 18,
     "y": 7,
-    "family": "noble"
+    "family": "noble",
+    "status": "available",
+    "email": null
   }
 ]
