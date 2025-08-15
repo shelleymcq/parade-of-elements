@@ -10,14 +10,16 @@ Step 1: Make a styled PT grid where each cell can be turned into a clickable ele
 
 Step 2: Manage state of elements ✅
 
-Set up a Firestore db with element 'status' of available/unavailable that FE uses to display element dynamically - and fast! (still manually updating status in db)
+Set up a Firestore db with element 'status' of available/unavailable that FE uses to display element dynamically - and fast! (still manually updating status in db) Also got rid of 'pending' for now. In the KISS phase for now.
 
-<img width="675" height="580" alt="image" src="https://github.com/user-attachments/assets/27c38b46-eddf-4f87-9c7b-3ec4f204b2bd" />
+<img width="1782" height="743" alt="image" src="https://github.com/user-attachments/assets/afc01fee-28b4-477c-8cff-fd9f0789fe81" />
+
 
 
 Step 3: Make elements selectable => updates state
 
 ### Phase 2 Automate emails to parade admin and user to verify element selection and share basic parade group instructions
-### Phase 3 Store all user/element info in a database for subsequent years
-### Phase 4+ Create an admin dashboard that controls all this, add features for historical info, assign/reassign ability, automate communication for each year's process
+### Phase 3 Get it hosted (free on Firebase and can use our current domain)
+### Phase 4 Store all user/element info in a database for subsequent years
+### Phase 5+ Create an admin dashboard that controls all this, add features for historical info, assign/reassign ability, automate communication for each year's process
 
