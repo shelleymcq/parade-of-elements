@@ -1,16 +1,24 @@
 import { useState } from "react";
 import Table from "./components/pTable/Table";
+import useElementStatus from "./hooks/useElementStatus";
 import "./App.css";
 
 function App() {
-  const assigned = [6, 8, 26, 79]; // C, O, Fe, Au
-  const pending = [1, 17]; // H, Cl
+  const { statusMap, loading } = useElementStatus();
+
+  // Convert statuses to the `assigned` prop (unavailable => assigned)
+  const assigned = Object.keys(statusMap)
+    .filter((z) => statusMap[z] === "unavailable")
+    .map((z) => Number(z));
 
   return (
     <>
       <h1>The Parade of Elements</h1>
+      {loading && (
+        <div style={{ fontSize: 12, opacity: 0.7 }}>loading availability…</div>
+      )}
 
-      <Table assigned={assigned} pending={pending} readOnly />
+      <Table assigned={assigned} readOnly />
     </>
   );
 }

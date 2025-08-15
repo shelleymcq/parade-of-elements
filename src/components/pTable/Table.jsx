@@ -23,7 +23,6 @@ const ROW_LABELS = [
  * PeriodicTable component
  * @param {{
  *   assigned?: number[] | Set<number>,
- *   pending?: number[] | Set<number>,
  *   onCellClick?: (el: any) => void,
  *   readOnly?: boolean,
  *   ariaLabel?: string,
@@ -31,41 +30,12 @@ const ROW_LABELS = [
  */
 export default function PeriodicTable({
   assigned = [],
-  pending = [],
   onCellClick,
   readOnly = true,
   ariaLabel = "Periodic table",
 }) {
   const assignedSet = assigned instanceof Set ? assigned : new Set(assigned);
-  const pendingSet = pending instanceof Set ? pending : new Set(pending);
   const clickable = typeof onCellClick === "function" && !readOnly;
-
-  // Key row configuration
-  const keyRowY = 2;
-  const keyStartX = 6;
-  const keyItems = [
-    {
-      label: "Available",
-      className: "cell family-nonmetal",
-      Z: "",
-      symbol: "N",
-      name: "Nitrogen",
-    },
-    {
-      label: "Pending",
-      className: "cell pending",
-      Z: "",
-      symbol: "N",
-      name: "Nitrogen",
-    },
-    {
-      label: "Unavailable",
-      className: "cell assigned",
-      Z: "",
-      symbol: "N",
-      name: "Nitrogen",
-    },
-  ];
 
   return (
     <div className="periodic-wrapper">
@@ -81,15 +51,6 @@ export default function PeriodicTable({
         </div>
 
         <div className="periodic-key-item">
-          <div className="periodic-key-label">Pending</div>
-          <div className="cell pending">
-            <div className="number"></div>
-            <div className="symbol">N</div>
-            <div className="name">Nitrogen</div>
-          </div>
-        </div>
-
-        <div className="periodic-key-item">
           <div className="periodic-key-label">Unavailable</div>
           <div className="cell assigned">
             <div className="number"></div>
@@ -98,6 +59,7 @@ export default function PeriodicTable({
           </div>
         </div>
       </div>
+
       <div className="periodic-group-labels" aria-hidden>
         {Array.from({ length: 18 }).map((_, i) => (
           <span key={i}>Group {i + 1}</span>
@@ -127,14 +89,8 @@ export default function PeriodicTable({
 
         {elements.map((el) => {
           const isAssigned = assignedSet.has(el.Z);
-          const isPending = !isAssigned && pendingSet.has(el.Z);
           const familyClass = el.family ? `family-${el.family}` : undefined;
-          const className = cx(
-            "cell",
-            familyClass,
-            isAssigned && "assigned",
-            isPending && "pending"
-          );
+          const className = cx("cell", familyClass, isAssigned && "assigned");
           const tabIndex = clickable ? 0 : -1;
           const handle = clickable
             ? () => onCellClick && onCellClick(el)
