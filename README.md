@@ -1,12 +1,18 @@
-# React + Vite
+# Parade of Elements 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Interactive periodic table for the group marching each year in the Dragon Con parade.
 
-Currently, two official plugins are available:
+### Phase 1 Display PT that allows the user to see available elements and select an element to represent.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Step 1: Make a styled PT grid where each cell can be turned into a clickable element. ✅
 
-## Expanding the ESLint configuration
+<img width="1130" height="763" alt="image" src="https://github.com/user-attachments/assets/7082d8e3-2d15-4311-8940-049b04566a5d" />
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Step 2: Manage state of elements
+
+Step 3: Make elements selectable => updates state
+
+### Phase 2 Automate emails to parade admin and user to verify element selection and share basic parade group instructions
+### Phase 3 Store all user/element info in a database for subsequent years
+### Phase 4+ Create an admin dashboard that controls all this, add features for historical info, assign/reassign ability, automate communication for each year's process
+
