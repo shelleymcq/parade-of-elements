@@ -8,7 +8,12 @@ Step 1: Make a styled PT grid where each cell can be turned into a clickable ele
 
 <img width="1130" height="763" alt="image" src="https://github.com/user-attachments/assets/7082d8e3-2d15-4311-8940-049b04566a5d" />
 
-Step 2: Manage state of elements
+Step 2: Manage state of elements ✅
+
+Set up a Firestore db with element 'status' of available/unavailable that FE uses to display element dynamically - and fast! (still manually updating status in db)
+
+<img width="675" height="580" alt="image" src="https://github.com/user-attachments/assets/27c38b46-eddf-4f87-9c7b-3ec4f204b2bd" />
+
 
 Step 3: Make elements selectable => updates state
 
