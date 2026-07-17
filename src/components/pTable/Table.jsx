@@ -39,6 +39,7 @@ export default function PeriodicTable({
 
   return (
     <div className="periodic-wrapper">
+      <h2>Choose Your Element</h2>
       {/* Key above table headings */}
       <div className="periodic-key" aria-hidden>
         <div className="periodic-key-item">
