@@ -1,33 +1,20 @@
-import React from "react";
 import elements from "../../utils/elements.json";
 import "./table.css";
 
-// Helper: classnames
 function cx(...parts) {
   return parts.filter(Boolean).join(" ");
 }
 
-// Spacers to shape s/p-block gaps in periods 2–3
 const SPACERS = [
   { key: "p2-gap", xStart: 3, xEnd: 12, y: 2 },
   { key: "p3-gap", xStart: 3, xEnd: 12, y: 3 },
 ];
 
-// Lanthanide/Actinide row labels
 const ROW_LABELS = [
   { key: "lanth-label", text: "Lanthanides", xStart: 1, xEnd: 3, y: 8 },
   { key: "act-label", text: "Actinides", xStart: 1, xEnd: 3, y: 9 },
 ];
 
-/**
- * PeriodicTable component
- * @param {{
- *   assigned?: number[] | Set<number>,
- *   onCellClick?: (el: any) => void,
- *   readOnly?: boolean,
- *   ariaLabel?: string,
- * }} props
- */
 export default function PeriodicTable({
   assigned = [],
   onCellClick,
@@ -39,97 +26,82 @@ export default function PeriodicTable({
 
   return (
     <div className="periodic-wrapper">
-      <h2>Choose Your Element</h2>
-      {/* Key above table headings */}
-      <div className="periodic-key" aria-hidden>
+      <div className="periodic-key" aria-label="Element availability key">
         <div className="periodic-key-item">
-          <div className="periodic-key-label">Available</div>
-          <div className="cell family-nonmetal">
-            <div className="number"></div>
-            <div className="symbol">N</div>
-            <div className="name">Nitrogen</div>
-          </div>
+          <span className="key-swatch available-swatch" /> Available
         </div>
-
         <div className="periodic-key-item">
-          <div className="periodic-key-label">Unavailable</div>
-          <div className="cell assigned">
-            <div className="number"></div>
-            <div className="symbol">N</div>
-            <div className="name">Nitrogen</div>
-          </div>
+          <span className="key-swatch assigned-swatch" /> Unavailable
         </div>
       </div>
 
-      <div className="periodic-group-labels" aria-hidden>
-        {Array.from({ length: 18 }).map((_, i) => (
-          <span key={i}>Group {i + 1}</span>
-        ))}
-      </div>
-
-      <div className="periodic-grid" role="grid" aria-label={ariaLabel}>
-        {SPACERS.map((s) => (
-          <div
-            key={s.key}
-            className="spacer"
-            style={{ gridColumn: `${s.xStart} / ${s.xEnd + 1}`, gridRow: s.y }}
-            aria-hidden
-          />
-        ))}
-
-        {ROW_LABELS.map((r) => (
-          <div
-            key={r.key}
-            className="row-label"
-            style={{ gridColumn: `${r.xStart} / ${r.xEnd + 1}`, gridRow: r.y }}
-            aria-hidden
-          >
-            <span>↳</span> {r.text}
+      <div className="periodic-scroll-region" tabIndex="0" aria-label="Scrollable periodic table">
+        <div className="periodic-canvas">
+          <div className="periodic-group-labels" aria-hidden="true">
+            {Array.from({ length: 18 }).map((_, index) => (
+              <span key={index}>{index + 1}</span>
+            ))}
           </div>
-        ))}
 
-        {elements.map((el) => {
-          const isAssigned = assignedSet.has(el.Z);
-          const familyClass = el.family ? `family-${el.family}` : undefined;
-          const className = cx("cell", familyClass, isAssigned && "assigned");
-          const tabIndex = clickable ? 0 : -1;
-          const handle = clickable
-            ? () => onCellClick && onCellClick(el)
-            : undefined;
+          <div className="periodic-grid" role="grid" aria-label={ariaLabel}>
+            {SPACERS.map((spacer) => (
+              <div
+                key={spacer.key}
+                className="spacer"
+                style={{ gridColumn: `${spacer.xStart} / ${spacer.xEnd + 1}`, gridRow: spacer.y }}
+                aria-hidden="true"
+              />
+            ))}
 
-          return (
-            <div
-              key={el.Z}
-              role={clickable ? "button" : undefined}
-              tabIndex={tabIndex}
-              aria-pressed={clickable ? false : undefined}
-              aria-label={`${el.name} (${el.symbol}), atomic number ${el.Z}`}
-              className={className}
-              data-atomic={el.Z}
-              data-symbol={el.symbol}
-              data-name={el.name}
-              data-family={el.family}
-              style={{
-                gridColumn: el.x,
-                gridRow: el.y,
-                cursor: clickable ? "pointer" : "default",
-              }}
-              onClick={handle}
-              onKeyDown={
-                clickable
-                  ? (e) => {
-                      if (e.key === "Enter" || e.key === " ")
-                        handle && handle();
+            {ROW_LABELS.map((row) => (
+              <div
+                key={row.key}
+                className="row-label"
+                style={{ gridColumn: `${row.xStart} / ${row.xEnd + 1}`, gridRow: row.y }}
+                aria-hidden="true"
+              >
+                <span>↳</span> {row.text}
+              </div>
+            ))}
+
+            {elements.map((element) => {
+              const isAssigned = assignedSet.has(element.Z);
+              const isClickable = clickable && !isAssigned;
+              const className = cx(
+                "cell",
+                element.family && `family-${element.family}`,
+                isAssigned && "assigned",
+                isClickable && "clickable"
+              );
+              const chooseElement = () => {
+                if (isClickable) onCellClick(element);
+              };
+
+              return (
+                <div
+                  key={element.Z}
+                  role={isClickable ? "button" : "gridcell"}
+                  tabIndex={isClickable ? 0 : -1}
+                  aria-disabled={isAssigned || undefined}
+                  aria-label={`${element.name}, symbol ${element.symbol}, atomic number ${element.Z}${isAssigned ? ", unavailable" : ", available"}`}
+                  className={className}
+                  style={{ gridColumn: element.x, gridRow: element.y }}
+                  onClick={chooseElement}
+                  onKeyDown={(event) => {
+                    if (isClickable && (event.key === "Enter" || event.key === " ")) {
+                      event.preventDefault();
+                      chooseElement();
                     }
-                  : undefined
-              }
-            >
-              <div className="number">{el.Z}</div>
-              <div className="symbol">{el.symbol}</div>
-              <div className="name">{el.name}</div>
-            </div>
-          );
-        })}
+                  }}
+                >
+                  <span className="number">{element.Z}</span>
+                  <strong className="symbol">{element.symbol}</strong>
+                  <span className="name">{element.name}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

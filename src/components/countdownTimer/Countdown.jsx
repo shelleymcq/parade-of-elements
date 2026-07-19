@@ -1,57 +1,34 @@
-import React, {useState, useEffect} from "react";
-import "./countdown.css"
+import { useEffect, useState } from "react";
+import "./countdown.css";
 
-const countdown_target = new Date("2026-09-03T23:59:59")
+const COUNTDOWN_TARGET = new Date("2026-09-05T10:00");
 
 const getRemainingTime = () => {
-    const totalRemaining = countdown_target - new Date();
-    // convert to ms
-    const days = Math.floor(totalRemaining / (1000*24*60*60));
-    const hours = Math.floor((totalRemaining / (100*60*60)) % 24);  // remove the days
-    const minutes = Math.floor((totalRemaining / (1000*60)) % 60);  //remove the hours
+  const totalRemaining = Math.max(0, COUNTDOWN_TARGET.getTime() - Date.now());
 
-    return {days, hours, minutes};
+  return {
+    days: Math.floor(totalRemaining / (1000 * 60 * 60 * 24)),
+    hours: Math.floor((totalRemaining / (1000 * 60 * 60)) % 24),
+    minutes: Math.floor((totalRemaining / (1000 * 60)) % 60),
+  };
 };
 
 export default function Countdown() {
+  const [timeLeft, setTimeLeft] = useState(getRemainingTime);
 
-    const [timeLeft, setTimeLeft] = useState(() => getRemainingTime());
+  useEffect(() => {
+    const timer = window.setInterval(() => setTimeLeft(getRemainingTime()), 60_000);
+    return () => window.clearInterval(timer);
+  }, []);
 
-    // update countdown every minute
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setTimeLeft(getRemainingTime())
-        }, 60000);
-
-        return() => {
-            clearInterval(timer);
-        };
-    }, []);
-    
-    return (
-        <div className="countdown">
-            <h2>Countdown to Dragon Con 2026</h2>
-            <div className="content">
-                <div className="box">
-                    <div className="value">
-                        <span>{timeLeft.days}</span>
-                    </div>
-                    <span className="label">days</span>
-                </div>
-                <div className="box">
-                    <div className="value">
-                        <span>{timeLeft.hours}</span>
-                    </div>
-                    <span className="label">hours</span>
-                </div>
-                <div className="box">
-                    <div className="value">
-                        <span>{timeLeft.minutes}</span>
-                    </div>
-                    <span className="label">minutes</span>
-                </div>
-            </div>
+  return (
+    <div className="countdown" aria-label="Countdown to Dragon Con 2026">
+      {Object.entries(timeLeft).map(([label, value]) => (
+        <div className="countdown-unit" key={label}>
+          <strong>{String(value).padStart(2, "0")}</strong>
+          <span>{label}</span>
         </div>
-    )
+      ))}
+    </div>
+  );
 }
-
