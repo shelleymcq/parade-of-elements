@@ -54,6 +54,8 @@ function App() {
           <span>Parade of Elements</span>
         </button>
 
+        <p>Site is under construction. Element registration coming soon!</p>
+
         <div className="nav-actions">
           <button className="nav-link" onClick={() => scrollTo("elements")}>
             Choose an element
