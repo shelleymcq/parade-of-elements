@@ -6,7 +6,7 @@ import "./claimForm.css";
 const emptyFields = { userName: "", userEmail: "" };
 
 // Enable claims form be setting to 'true'. Currently auto close 24 hours before start of parade
-const CLAIMS_ENABLED = false;
+const CLAIMS_ENABLED = true;
 const CLAIMS_CLOSE = new Date("2026-09-04T10:00:00");
 const claimsOpen =
   CLAIMS_ENABLED &&
