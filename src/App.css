@@ -1,34 +1,6 @@
 #root { min-height: 100vh; }
 .app-shell { min-height: 100vh; background: var(--page); }
 
-.site-nav {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  min-height: 3.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.55rem clamp(1rem, 4vw, 3rem);
-  border-bottom: 1px solid var(--border);
-  background: color-mix(in srgb, var(--page) 88%, transparent);
-  backdrop-filter: blur(16px);
-}
-
-.brand-button, .nav-link, .theme-toggle {
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.brand-button { display: flex; align-items: center; gap: 0.65rem; font-weight: 850; }
-.brand-mark { display: grid; place-items: center; width: 2rem; aspect-ratio: 1; border-radius: 0.55rem; background: var(--countdown-purple); color: var(--countdown-yellow); font-size: 0.72rem; }
-.nav-actions { display: flex; align-items: center; gap: 0.35rem; }
-.nav-link, .theme-toggle { padding: 0.55rem 0.75rem; border-radius: 0.65rem; font-weight: 700; }
-.nav-link:hover, .theme-toggle:hover { background: var(--accent-soft); }
-.theme-toggle { display: flex; align-items: center; gap: 0.4rem; }
-
 .hero-section {
   min-height: calc(100vh - 3.6rem);
   display: grid;
@@ -122,11 +94,6 @@ h2 { font-size: clamp(2rem, 5vw, 3.6rem); letter-spacing: -0.04em; line-height: 
 }
 
 @media (max-width: 620px) {
-  .nav-link,
-  .theme-label {
-    display: none;
-  }
-
   .hero-section {
     padding-top: 3rem;
   }

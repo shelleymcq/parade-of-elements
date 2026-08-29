@@ -1,0 +1,132 @@
+.site-nav.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  padding: 0.9rem clamp(1rem, 4vw, 3rem);
+
+  background: rgb(from var(--surface) r g b / 92%);
+  backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid var(--border);
+}
+
+.site-nav > .brand-button {
+  justify-self: start;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 0;
+
+  background: none;
+  border: none;
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.site-nav .brand-mark {
+  display: grid;
+  place-items: center;
+
+  width: 2.4rem;
+  height: 2.4rem;
+
+  border-radius: 50%;
+
+  background: var(--accent);
+  color: white;
+
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.site-nav .brand-name {
+  white-space: nowrap;
+}
+
+.site-nav > .nav-links {
+  justify-self: center;
+
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.site-nav .nav-link {
+  padding: 0.55rem 0.85rem;
+
+  border: none;
+  border-radius: 999px;
+
+  background: transparent;
+
+  font-weight: 600;
+}
+
+.site-nav .nav-link:hover {
+  background: var(--accent-soft);
+}
+
+.site-nav > .theme-toggle {
+  justify-self: end;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.55rem 0.9rem;
+
+  border: 1px solid var(--border);
+  border-radius: 999px;
+
+  background: var(--surface);
+  box-shadow: var(--shadow-md);
+}
+
+.site-nav .theme-toggle:hover {
+  border-color: var(--accent);
+}
+
+.site-nav .theme-label {
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .site-nav.site-nav {
+    grid-template-columns: 1fr auto;
+    row-gap: 1rem;
+  }
+
+  .site-nav > .brand-button {
+    justify-self: start;
+  }
+
+  .site-nav > .theme-toggle {
+    justify-self: end;
+  }
+
+  .site-nav > .nav-links {
+    grid-column: 1 / -1;
+
+    justify-self: center;
+    justify-content: center;
+
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .site-nav .theme-label {
+    display: none;
+  }
+}
