@@ -81,7 +81,7 @@ function App() {
         <section id="home" className="hero-section">
           <div className="hero-copy">
             <p className="eyebrow">
-              Dragon Con Parade · Saturday, September 5, 2026
+              Dragon Con Parade · Saturday, September 4, 2027
             </p>
 
             <Countdown />

@@ -19,6 +19,30 @@ import parade15 from "../../images/gallery/mercury.JPEG";
 import parade16 from "../../images/gallery/oxygen.JPEG";
 import parade17 from "../../images/gallery/th-pd-am-fe.JPG";
 
+// 2026 additions
+import parade9003 from "../../images/gallery/ROSS9003.jpg"
+import parade9004 from "../../images/gallery/ROSS9004.jpg"
+import parade9010 from "../../images/gallery/ROSS9010.jpg"
+import parade9012 from "../../images/gallery/ROSS9012.jpg"
+import parade9016 from "../../images/gallery/ROSS9016.jpg"
+import parade9018 from "../../images/gallery/ROSS9018.jpg"
+import parade9023 from "../../images/gallery/ROSS9023.jpg"
+import parade9026 from "../../images/gallery/ROSS9026.jpg"
+import parade9029 from "../../images/gallery/ROSS9029.jpg"
+import parade9030 from "../../images/gallery/ROSS9030.jpg"
+import parade9034 from "../../images/gallery/ROSS9034.jpg"
+import parade9046 from "../../images/gallery/ROSS9046.jpg"
+import parade9050 from "../../images/gallery/ROSS9050.jpg"
+import parade9053 from "../../images/gallery/ROSS9053.jpg"
+import parade9067 from "../../images/gallery/ROSS9067.jpg"
+import parade9092 from "../../images/gallery/ROSS9092.jpg"
+import parade9109 from "../../images/gallery/ROSS9109.jpg"
+import parade9110 from "../../images/gallery/ROSS9110.jpg"
+import parade9119 from "../../images/gallery/ROSS9119.jpg"
+import parade9122 from "../../images/gallery/ROSS9122.jpg"
+import parade9124 from "../../images/gallery/ROSS9124.jpg"
+
+
 
 const photos = [
   {
@@ -88,6 +112,90 @@ const photos = [
   {
     src: parade17,
     alt: "Parade of Elements participants th-pd-am-fe",
+  },
+  {
+    src: parade9003,
+    alt: "Parade of Elements participants platinum",
+  },
+  {
+    src: parade9004,
+    alt: "Parade of Elements participants neptumium",
+  },
+  {
+    src: parade9010,
+    alt: "Parade of Elements participants lead",
+  },
+  {
+    src: parade9012,
+    alt: "Parade of Elements participants polonium",
+  },
+  {
+    src: parade9016,
+    alt: "Parade of Elements participants potassium",
+  },
+  {
+    src: parade9018,
+    alt: "Parade of Elements participants mercury",
+  },
+  {
+    src: parade9023,
+    alt: "Parade of Elements participants californium",
+  },
+  {
+    src: parade9026,
+    alt: "Parade of Elements participants berkelium",
+  },
+  {
+    src: parade9029,
+    alt: "Parade of Elements participants thorium",
+  },
+  {
+    src: parade9030,
+    alt: "Parade of Elements participants helium",
+  },
+  {
+    src: parade9034,
+    alt: "Parade of Elements participants nickel",
+  },
+  {
+    src: parade9046,
+    alt: "Parade of Elements participants mg-ba",
+  },
+  {
+    src: parade9050,
+    alt: "Parade of Elements participants nihonium",
+  },
+  {
+    src: parade9053,
+    alt: "Parade of Elements participants boron",
+  },
+  {
+    src: parade9067,
+    alt: "Parade of Elements participants three mad scientists",
+  },
+  {
+    src: parade9092,
+    alt: "Parade of Elements participants as-md",
+  },
+  {
+    src: parade9109,
+    alt: "Parade of Elements participants sn-au-hg-f",
+  },
+  {
+    src: parade9110,
+    alt: "Parade of Elements participants sodium",
+  },
+  {
+    src: parade9119,
+    alt: "Parade of Elements participants americium",
+  },
+  {
+    src: parade9122,
+    alt: "Parade of Elements participants mad scientist",
+  },
+  {
+    src: parade9124,
+    alt: "Parade of Elements participants lawrencium",
   },
 
 ];
